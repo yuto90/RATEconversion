@@ -1,0 +1,11 @@
+{% extends 'gmap_scrape/base.html' %}
+{% load custom %}
+
+{% block content %}
+    <form action="{% url 'gmap_scrape:index' %}" method="POST" class='form'>
+        {% csrf_token %}
+        {{ form.as_p }}
+    <button class="btn-flat-vertical-border" type="submit" value="変換" pattern='^[0-9]{1,}$'>変換する</button>
+    <!--'^[0-9]+$'-->
+    </form>
+{% endblock %}

@@ -1,0 +1,100 @@
+body{
+    background-image: url(media/stock-exchange-738671_1280.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+/*body::before{
+    z-index: 10;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:#70b17099;
+}*/
+h2{
+    color: snow;
+}
+
+p{
+    color: snow;
+}
+
+.back{
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.header{
+    border-bottom: solid 3px #2bff00; 
+    /*background-color: #6acf96;*/
+    height: 80px;
+    width: 100%;
+}
+
+.title{
+    color: snow;
+    padding: 20px 20px;
+}
+
+.main{
+    text-align: center;
+    /*background-color: hsla(182, 89%, 74%, 0.39);*/
+    height: 550px;
+    width: 100%;
+
+}
+
+.yen{
+    color:#04f804;
+    font-size: 40px;
+
+}
+
+.kekka{
+    color:#fd303b;
+    font-size: 40px;
+}
+
+.get{
+    color: rgb(61, 120, 248);
+    font-size: 25px;
+}
+
+.form{
+    text-align: center;
+    height: 550px;
+    width: 100%;
+}
+
+.btn-flat-vertical-border{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-left: solid 4px #2bff00;
+    border-right: solid 4px #2bff00;
+    color: #177903;
+    background: #b7fda9;
+    transition: .4s;
+}
+
+.btn-flat-vertical-border:hover {
+    background: #668ad8;
+    color: #FFF;
+}
+
+.footer{
+    /*background-color:rosybrown;*/
+    border-top: solid 3px #2bff00; 
+    height: 80px;
+    width: 100%;
+}
+
+.title_footer{
+    color: snow;
+}

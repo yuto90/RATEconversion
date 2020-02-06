@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('gmap_scrape.urls')),
+    path('form', include('gmap_scrape.urls')),
 ]

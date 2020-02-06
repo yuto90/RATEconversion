@@ -1,0 +1,27 @@
+{% extends 'gmap_scrape/base.html' %}
+
+
+{% block content %}
+        <div class="main">
+            <div class="container_main">
+                <h2>米ドルを日本円へ変換</h2>
+                <p>現在({{ dt_now }})のレート:Yahoo！ファイナンス</p>
+                <p><span class="yen">{{ yen }}</span>(円)</p>
+                <br>
+                <br>
+                <form action="{% url 'gmap_scrape:form' %}">
+                <button class="btn-flat-vertical-border"　type="submit" value="変換する">変換する</button> 
+                </form>
+                <br>
+                <br>
+                <br>
+
+                
+
+                <!--リクエストがPOSTのときのみ表示-->
+                {% if request.method == "POST" %}
+                    <p><span class="get">{{ get }}</span>ドルは<span class="kekka">{{ kekka }}</span>円です。</p>
+                {% endif %}
+            </div>
+        </div>
+{% endblock %}
